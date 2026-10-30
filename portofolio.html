@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portofolio Pribadi</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style>
+      body {
+        background: linear-gradient(135deg, #f8f5fc 0%, #ecdffc 100%);
+        min-height: 100vh;
+      }
+      .aesthetic-bg {
+        background: linear-gradient(135deg, #f4effb 0%, #e2d1fc 100%) !important;
+      }
+      /* Custom style warna tombol ungu yang cocok dengan latar belakang */
+      .btn-purple { 
+        background-color: #8a53a0 !important;
+        border-color: #8a53a0 !important;
+        color: #ffffff !important;
+      }
+      .btn-purple:hover {
+        background-color: #733f87 !important;
+        border-color: #733f87 !important;
+      }
+      .btn-outline-purple {
+        color: #733f87 !important;
+        border-color: #8a53a0 !important;
+      }
+      .btn-outline-purple:hover {
+        background-color: #8a53a0 !important;
+        color: #ffffff !important;
+      }
+    </style>
+  </head>
+  <body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">Portofolio</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Beranda</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#pendidikan">Pendidikan</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" aria-disabled="true">Kontak</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<section id="beranda" class="py-5 aesthetic-bg">
+      <div class="container py-4">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <h1 class="display-4 fw-bold">Riwayat Pendidikan Saya</h1>
+            <p class="lead">Berikut adalah rekam jejak pendidikan formal yang telah saya tempuh dari tingkat dasar hingga kejuruan.</p>
+            <!-- Tombol CTA -->
+            <a href="#pendidikan" class="btn btn-purple btn-lg">Lihat Pendidikan</a>
+            
+            <!-- BAGIAN 4: Tombol Pemicu Modal -->
+            <button type="button" class="btn btn-outline-purple btn-lg ms-2" data-bs-toggle="modal" data-bs-target="#profilModal">
+              Lihat Profil Detail
+            </button>
+          </div>
+          <div class="col-md-6 text-center mt-4 mt-md-0">
+            <img src="img/fotoku.jpeg" alt="Ilustrasi" class="img-fluid rounded-circle shadow" style="width: 320px; height: 320px; object-fit: cover;">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BAGIAN 2: Grid Kartu Riwayat Pendidikan -->
+    <section id="pendidikan" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-5">Riwayat Pendidikan</h2>
+        <div class="row g-4">
+          <!-- Pendidikan 1: SD -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm p-3 bg-white border-0">
+              <div class="card-body d-flex flex-column">
+                <span class="badge bg-secondary mb-2 align-self-start">Pendidikan Dasar</span>
+                <h5 class="card-title fw-bold mb-2">SD NEGERI 60 LEMBANG (SD)</h5>
+                <p class="card-text text-muted">Membangun karakter dasar dan kedisiplinan belajar selama 6 tahun</p>
+              </div>
+            </div>
+          </div>
+          <!-- Pendidikan 2: SMP -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm p-3 bg-white border-0">
+              <div class="card-body d-flex flex-column">
+                <span class="badge bg-secondary mb-2 align-self-start">Menengah Pertama</span>
+                <h5 class="card-title fw-bold mb-2">SMP NEGERI 4 MAJENE (SMP)</h5>
+                <p class="card-text text-muted">Memperluas wawasan dan mengasah potensi diri selama 3 tahun masa studi</p>
+              </div>
+            </div>
+          </div>
+          <!-- Pendidikan 3: SMK -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm p-3 bg-white border-0">
+              <div class="card-body d-flex flex-column">
+                <span class="badge bg-secondary mb-2 align-self-start">Teknik Komputer & Jaringan</span>
+                <h5 class="card-title fw-bold mb-2">SMK NEGERI 1 MAJENE (SMK)</h5>
+                <p class="card-text text-muted">Memiliki passion mendalam pada jaringan perkabelan</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BAGIAN 3: Form Kontak Valid -->
+    <section id="kontak" class="py-5 aesthetic-bg">
+      <div class="container">
+        <h2 class="text-center mb-4">Hubungi Saya</h2>
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-lg-6">
+            <!-- Form Kontak Lengkap -->
+            <form class="needs-validation" novalidate>
+              <div class="mb-3">
+                <label for="inputNama" class="form-label">Nama Lengkap</label>
+                <input type="text" class="form-control bg-white" id="inputNama" required>
+                <div class="invalid-feedback">Silakan masukkan nama Anda.</div>
+              </div>
+              <div class="mb-3">
+                <label for="inputEmail" class="form-label">Alamat Email</label>
+                <input type="email" class="form-control bg-white" id="inputEmail" required>
+                <div class="invalid-feedback">Silakan masukkan email yang valid.</div>
+              </div>
+              <div class="mb-3">
+                <label for="inputPesan" class="form-label">Pesan</label>
+                <textarea class="form-control bg-white" id="inputPesan" rows="4" required></textarea>
+                <div class="invalid-feedback">Pesan tidak boleh kosong.</div>
+              </div>
+              <button type="submit" class="btn btn-purple w-100 py-2">Kirim Pesan</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BAGIAN 4: Interaktivitas Modal (Popup) -->
+    <div class="modal fade" id="profilModal" tabindex="-1" aria-labelledby="profilModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title fw-bold" id="profilModalLabel">Profil & Sertifikat</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h5 class="fw-bold mb-2">Profil</h5>
+            <p class="text-secondary mb-4">Saya adalah seorang mahasiswi dari Universitas Sulawesi Barat, mahasiswi semester 3, prodi Informatika.</p>
+            
+            <h5 class="fw-bold mb-2">Sertifikat</h5>
+            <ul class="text-secondary ps-3">
+              <li>Siswa Terbaik 1 Program Keahlian Teknik Komputer & Jaringan</li>
+              <li>Sertifikat Mengikuti PKKMB Universitas Sulawesi Barat</li>
+              <img src="img/sertifikat.png" style="object-fit: cover; width: 100%; align-items: center" alt="">
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-purple px-4" data-bs-dismiss="modal">Tutup</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--<footer class="py-4 text-center bg-primary text-white border-top">
+      <div class="container">
+        <small>&copy; 2026 Nur Aslia Arifah</small>
+      </div>
+    </footer>-->
+    <!--Bootstrap 5 javaScript Bundle-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script>
+        (() => {
+  'use strict'
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  const forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.from(forms).forEach(form => {
+    form.addEventListener('submit', event => {
+      if (!form.checkValidity()) {
+        event.preventDefault()
+        event.stopPropagation()
+      }
+
+      form.classList.add('was-validated')
+    }, false)
+  })
+})()
+    </script>
+  </body>
+</html>
